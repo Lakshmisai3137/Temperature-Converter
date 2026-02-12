@@ -77,6 +77,7 @@ Output: 77
 ## Project Structure
 
 app/
+ |
  ├── java/
  │   └── MainActivity.java
  ├── res/
