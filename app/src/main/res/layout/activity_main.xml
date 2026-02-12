@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#43050A"
+    android:backgroundTint="#0D1B2A"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="Celsius to Fahrenheit Converter"
+        android:textAllCaps="true"
+        android:textColor="#0F5180"
+        android:textColorHint="#B0BEC5"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="Enter Temperature in Celsius"
+        android:textColor="#0F2780"
+        android:textColorHint="#B0BEC5"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="Temperature in Fahrenheit"
+        android:textColor="#0F2780"
+        android:textColorHint="#B0BEC5"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/convert" />
+
+    <TextView
+        android:id="@+id/Fahrenheit"
+        android:layout_width="271dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="152dp"
+        android:background="#112C4B"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/convert" />
+
+    <EditText
+        android:id="@+id/Celsius"
+        android:layout_width="280dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="47dp"
+        android:autoText="false"
+        android:background="#230404"
+        android:backgroundTint="#112C4B"
+        android:contextClickable="false"
+        android:elegantTextHeight="false"
+        android:ems="10"
+        android:freezesText="false"
+        android:gravity="center"
+        android:hint="Type Here"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B0BEC5"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title2" />
+
+    <Button
+        android:id="@+id/convert"
+        android:layout_width="359dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#00897B"
+        android:text="CONVERT"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Celsius" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
