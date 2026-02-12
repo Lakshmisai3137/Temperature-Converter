@@ -76,14 +76,6 @@ Output: 77
 
 ## Project Structure
 
-app/
- |
- ├── java/
- │   └── MainActivity.java
- ├── res/
- │   └── layout/
- │       └── activity_main.xml
-
 - activity_main.xml → UI Design (XML)
 - MainActivity.java → App Logic (Java)
 
